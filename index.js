@@ -19,7 +19,7 @@ app.use(express.json());
 
 
 const corsOptions={
-    origin:"https://astonishing-heliotrope-dd80b0.netlify.app",
+    origin:"https://ecommercefrontend-trgx.onrender.com",
     methods: ['GET', 'POST', 'PUT', 'DELETE', 'PATCH', 'HEAD'],
     credentials:true,
     allowedHeaders: ['Content-Type', 'Authorization', 'Authentication']
