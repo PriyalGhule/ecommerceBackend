@@ -62,7 +62,7 @@ app.post('/login', validate(loginSchema), async(req, res)=>{
     const {email, password}=req.body;
     const userExist=await Customer.findOne({email});
     if(!userExist){
-        return res.status(200).json("Invalid credentials");
+        return res.status(401).json("Invalid credentials");
 
     }
 
